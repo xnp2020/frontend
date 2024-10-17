@@ -133,6 +133,10 @@ Infinity: 数字大小超出允许的最大值
 
 ```
 typeof Infinity; //返回number
+
+//isFinite()，如果参数为NaN或Infinity，返回false，否则返回true
+isFinite(10/0);       // returns false
+isFinite(10/1);       // returns true
 ```
 
 - 方法
@@ -463,7 +467,7 @@ person.changeName = function (name) {
 
 ​       object.entries()获取对象的key和value
 
-​       JSON.stringify()转换对象成json对象
+​       JSON.stringify()转换对象成json样式的string
 
 ```
 // Create an Object
@@ -473,7 +477,7 @@ const person = {
   city: "New York"
 };
 
-// Stringify Object
+// Stringify Object 成为 string
 let myString = JSON.stringify(person); //myString的值为{"name":"John","age":30,"city":"New York"}
 
 ```
@@ -1164,6 +1168,10 @@ for (const entry of myIterator) {
   Math.sign(0);   //0
   Math.sign(4);   //1
   
+  Math.cbrt(8);    // returns 2
+  Math.cbrt(64);    // returns 4
+  Math.cbrt(125);    // returns 5
+  
   Math.pow(8, 2); //64
   Math.sqrt(64);  //8
   Math.abs(-4.7);  //4.7
@@ -1446,7 +1454,6 @@ for (let i = 0; i < 10; i++) {
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
 let text = "";
 
-
 //label:statements
 //{}定义代码块
 //定义一个label
@@ -1606,7 +1613,7 @@ function myFunction() {
 
 ```
 
-使用var声明的全局变量属于窗口对象。
+使用var声明的全局变量属于window对象。
 
 ```
 var carName = "Volvo";
@@ -1618,6 +1625,110 @@ let carName = "Volvo";
 ```
 
 不要声明全局变量，因为全局变量会覆盖window变量；window对象会覆盖你的全局变量。
+
+# JS Hoisting
+
+Hoisting：自动将声明移动到顶部，却不会将初始化移动到顶部。
+
+为了避免bug，应该总是先声明变量，再使用变量。
+
+严格模式下，变量没有声明，不能使用。
+
+```
+var x; // Declare x  声明
+x = 5; // Assign 5 to x 初始化
+```
+
+```
+var x = 5; // Initialize x
+
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x + " " + y;           // Display x and y ,x为5，y为undefined
+
+var y = 7; // Initialize y
+```
+
+# strict mode
+
+在js文件或function顶部声明："use strict";
+
+# Class
+
+class总是有一个constructor方法。
+
+```
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+```
+
+# Module
+
+## **Named Exports**
+
+### In-line individually
+
+```
+export const name = "Jesse";
+export const age = 40;
+```
+
+### All at once at the bottom
+
+```
+const name = "Jesse";
+const age = 40;
+
+export {name, age};
+```
+
+### import
+
+```
+import { name, age } from "./person.js";
+```
+
+
+
+## Default Exports
+
+```
+const message = () => {
+const name = "Jesse";
+const age = 40;
+return name + ' is ' + age + 'years old.';
+};
+
+export default message;
+```
+
+### import
+
+```
+import message from "./message.js";
+```
+
+# Vue3
+
+安装node
+
+```
+//创建vue项目
+npm init vue@latest
+
+```
 
 
 

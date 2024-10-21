@@ -3,14 +3,21 @@
     <IfDemo />
     <ListDemo />
     <KeyDemo /> -->
-    <!-- <EventDemo1 />
-    <EventDemo2 /> -->
-    <!-- <EventDemo3 />
-    <EventDemo4 />
-    <EventDemo5 /> -->
+    <!-- <EventDemo1 /> -->
+    <!-- <EventDemo2 /> -->
+    <!-- <EventDemo3 /> -->
+    <!-- <EventDemo4 /> -->
+    <!-- <EventDemo5 /> -->
     <!-- <EventDemo6 /> -->
     <!-- <ArrayList /> -->
-    <ComputedDemo />
+    <!-- <ComputedDemo /> -->
+    <!-- <ClassDemo /> -->
+    <!-- <StyleDemo /> -->
+    <!-- <WatchDemo /> -->
+    <!-- <ModelsDemo />
+    <ModelsDemo2 /> -->
+    <Refdemo />
+
 </template>
 
 <script setup>
@@ -26,4 +33,10 @@ import EventDemo5 from './components/EventDemo5.vue'
 import EventDemo6 from './components/EventDemo6.vue'
 import ArrayList from './components/ArrayList.vue'
 import ComputedDemo from './components/ComputedDemo.vue'
+import ClassDemo from './components/ClassDemo.vue'
+import StyleDemo from './components/StyleDemo.vue'
+import WatchDemo from './components/WatchDemo.vue'
+import ModelsDemo from './components/ModelsDemo.vue'
+import ModelsDemo2 from './components/ModelsDemo2.vue'
+import Refdemo from './components/Refdemo.vue'
 </script>

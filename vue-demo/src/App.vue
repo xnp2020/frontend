@@ -11,12 +11,12 @@
     <!-- <EventDemo6 /> -->
     <!-- <ArrayList /> -->
     <!-- <ComputedDemo /> -->
-    <!-- <ClassDemo /> -->
-    <!-- <StyleDemo /> -->
+    <!-- <ClassDemo />
+    <StyleDemo /> -->
     <!-- <WatchDemo /> -->
     <!-- <ModelsDemo />
     <ModelsDemo2 /> -->
-    <Refdemo />
+    <!-- <Refdemo /> -->
 
 </template>
 

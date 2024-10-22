@@ -14,7 +14,7 @@ export default {
             isActive: true,
             hasError: true,
             classObject: {
-                active: true,
+                'active': true,
                 'text-danger': true
             },
             activeClass: 'active',

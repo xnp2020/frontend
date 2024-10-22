@@ -3,19 +3,20 @@
     <form>
         <label for=1>v-model默认: </label>
         <input type="text" v-model="msg" id=1></input>
-        <p>{{ msg }}</p>
+        <p>你的输入是：{{ msg }}</p>
 
         <label for=2>v-model.lazy: </label>
         <input type="text" v-model.lazy="msg2" id=2></input>
-        <p>{{ msg2 }}</p>
+        <p>你的输入是：{{ msg2 }}</p>
 
 
         <label for=4>v-model.trim: </label>
         <input type="text" v-model.trim="msg4" id="4"></input>
-        <p>{{ msg4 }}</p>
+        <p>你的输入是：{{ msg4 }}</p>
 
-        <label for="checkbox"> {{ checked }}</label>
+        <label for="checkbox">你的选择：</label>
         <input type="checkbox" id="checkbox" v-model="checked"></input>
+        <p>你的选择是： {{ checked }}</p>
 
 
     </form>
@@ -32,7 +33,8 @@ export default {
             msg4: "",
             checked: false
         };
-    }
+    },
+
 };
 
 </script>

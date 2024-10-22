@@ -93,7 +93,7 @@ Inline优先级最高。
 
 ## Internal CSS
 
-放在head中，style引入。
+放在head中，style引入。优先级同External CSS。
 
 ```
 <!DOCTYPE html>

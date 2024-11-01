@@ -1,5 +1,6 @@
 <template>
-    <input type="text" v-model="search">
+    <label for="1">子组件中搜索：</label>
+    <input type="text" v-model="search" id="1">
 </template>
 
 

@@ -1,6 +1,6 @@
 <template>
     <h3>数组变化侦听</h3>
-    <button @click="addListHandle">添加</button>
+    <button @click="addListHandle">push添加数组</button>
     <ul>
         <li v-for="(name, index) in names" :key="index">{{ name }}</li>
     </ul>
@@ -11,12 +11,12 @@
     </ul>
 
 
-    <h3>数组2</h3>
+    <!-- <h3>数组2</h3>
     <ul>
         <li v-for="(item, index) in num2" :key="index">{{ item }}</li>
-    </ul>
+    </ul> -->
 
-    <button @click="concatHandle">添加</button>
+    <button @click="concatHandle">concat添加数组</button>
 
 
 

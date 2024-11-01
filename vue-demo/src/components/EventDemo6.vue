@@ -16,17 +16,16 @@ export default {
     },
     methods: {
         clickHandle(e) {
-            // 阻止默认事件
+            // 阻止事件默认行为，例如a标签的跳转
             // e.preventDefault();
             console.log("点击了");
-            // 阻止事件冒泡
-            e.stopPropagation();
         },
         clickDiv() {
 
             console.log("点击了div");
         },
         clickP() {
+            // 阻止事件冒泡，例如点击p的时候，阻止div的点击事件
             //e.stopPropagation();
             console.log("点击了p");
         }
